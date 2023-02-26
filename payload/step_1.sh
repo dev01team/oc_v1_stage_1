@@ -31,7 +31,7 @@ echo " * 2 ++++++++++++++++++++++++ > DONE !!! S -- N -- M "
 mkdir -p /root/EXTRAT/
 #mkdir /root/EXTRAT/firefox-58.0.1/
 #mkdir /root/EXTRAT/firefox-60.0.1esr/
-mkdir $home_py/EXTRAT/firefox-97.0.1/
+mkdir /root/EXTRAT/firefox-97.0.1/
 
 
 ############## firefox-97.0
