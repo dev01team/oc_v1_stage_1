@@ -14,7 +14,7 @@ ENV DISPLAY=:0 \
     SSH_PORT=22 \
     US_PS=azer \
     SUPER_VISOR__PORT=9001 \
-    XAUTHORITY=/home/pythony/.Xauthority \
+    XAUTHORITY=/root/.Xauthority \
     DEBIAN_FRONTEND=noninteractive
 
 
@@ -23,7 +23,7 @@ RUN echo $V1_NGROK_TOKENS $key002 $Environment_KEY_VAULT $key1
 RUN echo ${V1_NGROK_TOKENS}
 RUN echo $V1_NGROK_TOKENS
 RUN echo $NGROK_TOKENS
-ENV HOME=/home/pythony \
+ENV HOME=/root \
     TERM=xterm \
     STARTUPDIR=/dockerstartup \
     VNC_VIEW_ONLY=false
