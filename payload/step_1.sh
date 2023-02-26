@@ -24,6 +24,8 @@ pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySock
 apt-get install --assume-yes xfce4 desktop-base xfce4-terminal xscreensaver  < /dev/null > /dev/null
 apt-get --assume-yes autoclean
 apt-get --assume-yes autoclean
+apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 echo " * 2 ++++++++++++++++++++++++ > DONE !!! S -- N -- M "
 
 mkdir -p /root/EXTRAT/
