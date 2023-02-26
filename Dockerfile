@@ -1,7 +1,7 @@
 FROM debian:bullseye
 
 #FROM ubuntu:20.04
-MAINTAINER 0x##Y8H4 Diklic "loc_v1_stage_1"
+#MAINTAINER 0x##Y8H4 Diklic "loc_v1_stage_1"
 
 ###########################################################################
 
@@ -49,13 +49,13 @@ RUN $STARTUPDIR/step_1.sh
 
 ###########################################################################
 #ADD ./etc/ /etc/
-RUN mkdir -p /home/pythony/.ssh
-RUN rm /etc/ssh/sshd_config
-RUN cp $STARTUPDIR/sshd_config /etc/ssh/
+#RUN mkdir -p /home/pythony/.ssh
+#RUN rm /etc/ssh/sshd_config
+#RUN cp $STARTUPDIR/sshd_config /etc/ssh/
 
-RUN mkdir /var/run/sshd
+#RUN mkdir /var/run/sshd
 
-RUN useradd --user-group --create-home --system mogenius
+#RUN useradd --user-group --create-home --system mogenius
 
 RUN echo 'root:root' |chpasswd
 
