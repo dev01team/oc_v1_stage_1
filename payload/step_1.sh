@@ -25,3 +25,18 @@ apt-get install --assume-yes xfce4 desktop-base xfce4-terminal xscreensaver  < /
 apt-get --assume-yes autoclean
 apt-get --assume-yes autoclean
 echo " * 2 ++++++++++++++++++++++++ > DONE !!! S -- N -- M "
+mkdir -p /home/pythony/EXTRAT/
+mkdir /home/pythony/EXTRAT/firefox-58.0.1/
+mkdir /home/pythony/EXTRAT/firefox-60.0.1esr/
+mkdir $home_py/EXTRAT/firefox-97.0.1/
+
+
+############## firefox-60.0
+wget -q https://ftp.mozilla.org/pub/firefox/releases/60.0.1esr/linux-x86_64/en-US/firefox-60.0.1esr.tar.bz2 && tar -xf firefox-60.0.1esr.tar.bz2 -C $home_py/EXTRAT/firefox-60.0.1esr/
+rm firefox-60.0.1esr.tar.bz2 
+wget -q https://ftp.mozilla.org/pub/firefox/releases/58.0.1/linux-x86_64/en-GB/firefox-58.0.1.tar.bz2 && tar -xf firefox-58.0.1.tar.bz2 -C $home_py/EXTRAT/firefox-58.0.1/
+rm firefox-58.0.1.tar.bz2
+
+ wget -q https://ftp.mozilla.org/pub/firefox/releases/97.0.1/linux-x86_64/en-GB/firefox-97.0.1.tar.bz2 && tar -xf firefox-97.0.1.tar.bz2 -C $home_py/EXTRAT/firefox-97.0.1/
+
+echo " * 3 ------------- > INSTALL geckodriver-v0.32.0 "
